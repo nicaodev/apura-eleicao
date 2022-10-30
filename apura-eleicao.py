@@ -28,6 +28,6 @@ while (True):
     df = pd.DataFrame(list(zip(candidato, votos, porcentagem)), columns=['Candidato', 'N votos', 'Porcentagem'])
 
     print(df)
-    print('TOTAL DE URNAS:', procentagemUrnas,'%','\n', 'Hora da chegagem:', datetime.now().hour, ':', datetime.now().minute, '\n')
+    print('TOTAL DE URNAS:', procentagemUrnas,'%','\n', 'Hora da chegagem:', datetime.now().strftime("%H:%M:%S"),'\n')
 
     sleep(30)
